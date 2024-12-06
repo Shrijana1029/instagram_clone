@@ -11,7 +11,7 @@ class Profile extends StatefulWidget {
 class _ProfileState extends State<Profile> {
   final imagePaths = [
     'assets/img/me.png',
-    'assets/img/me.png',
+    // 'assets/img/me.png',
     'assets/img/gun.png',
     'assets/img/insta.png',
     'assets/img/pic.jpg',
