@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_clone/screens/login.dart';
+import 'package:instagram_clone/screens/home_screen.dart';
 // import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         navigatorKey: navigatorKey,
         scaffoldMessengerKey: scaffoldKey,
         title: 'Flutter Demo',
-        home: const Login(),
+        home: const HomeScreen(),
         theme: ThemeData(
           textTheme: const TextTheme(
             displayLarge: TextStyle(
@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
             displaySmall: TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.bold,
-              letterSpacing: 1.0,
+              // letterSpacing: 1.0,
               color: Color.fromARGB(255, 32, 30, 30),
             ),
           ),

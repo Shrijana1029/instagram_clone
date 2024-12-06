@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_clone/firebase_service/firebase_authentication.dart';
 import 'package:instagram_clone/main.dart';
+import 'package:instagram_clone/screens/feed_screen.dart';
 import 'package:instagram_clone/screens/signup.dart';
 
 class Login extends StatefulWidget {
@@ -82,7 +83,7 @@ class _LoginState extends State<Login> {
                 .login(email: _email.text, password: _password.text);
             if (message!.contains('Success')) {
               navigatorKey.currentState?.pushReplacement(
-                  MaterialPageRoute(builder: (_) => const SignupPage()));
+                  MaterialPageRoute(builder: (_) => const FeedScreen()));
             } else if (message == 'Wrong password provided for that user.') {
               print('wrong password');
             } else {
